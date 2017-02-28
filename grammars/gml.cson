@@ -28,6 +28,27 @@
     'name': 'constant.numeric.gml'
   }
   {
+    'match': '(^\\s*\\/\\/\\/\\s*end_perform)\\b'
+    'name': 'comment.perform.end.gml'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'perform.start.name'
+      '2':
+        'name': 'perform.start.description'
+    'match': '(^\\s*\\/\\/\\/\\s*perform_\\w*)( .*)?'
+    'name': 'comment.perform.start.gml'
+  }
+  {
+    'match': '#define \\S*$'
+    'name': 'comment.script.start.gml'
+  }
+  {
+    'match': '(^\\s*\\/\\/\\/\\s*end_define)\\b'
+    'name': 'comment.script.end.gml'
+  }
+  {
     'begin': '\''
     'beginCaptures':
       '0':
@@ -151,11 +172,7 @@
   }
   {
     'match': '\\b([A-Za-z_]\\w*)\\b(?=\\s*(?:[("\']|\\[\\[))'
-    'name': 'support.function.any.gml'
-  }
-  {
-    'match': '(^[ \\t]+)?(\#define \\S*$)'
-    'name': 'comment.script.title.gml'
+    'name': 'support.function.gml'
   }
   {
     'match': '(\\s|^)(\\+=?|-=?|\\*=?|\\/=?|==?|\\^\\^?|!=|<(=|<)?|>(=|>)?|&&?|\\|\\|?|div|mod)(\\s|$)'
