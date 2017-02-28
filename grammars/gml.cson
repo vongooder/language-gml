@@ -165,4 +165,8 @@
     'match': '((?<=(\\w))(--|\\+\\+)|!(?=(\\w|\\W)))'
     'name': 'keyword.operator.gml'
   }
+  {
+    'match': '\\b[A-Z_]+\\b'
+    'name': 'constant.language.gml'
+  }
 ]
