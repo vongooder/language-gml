@@ -7,7 +7,7 @@
 'name': 'GMX'
 'patterns': [
   {
-    'contentName': 'source.gml'
+    'contentName': 'source.gml.embedded'
     'begin':'(?<=<string>)'
     'end': '(?=<\/string>)'
     'patterns': [
