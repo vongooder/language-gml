@@ -138,7 +138,7 @@
     ]
   }
   {
-    'match': '\\b(break|case|continue|default|do|else|end|enum|exit|for|global|globalvar|if|repeat|return|switch|then|until|var|while)\\b'
+    'match': '\\b(break|case|continue|default|do|else|end|enum|exit|for|global|globalvar|if|repeat|return|switch|then|until|var|while|with)\\b'
     'name': 'keyword.control.gml'
   }
   {
