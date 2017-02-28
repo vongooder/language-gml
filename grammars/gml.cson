@@ -166,6 +166,10 @@
     'name': 'keyword.operator.gml'
   }
   {
+    'match': '\\bo[a-z](_|[A-Z]\\w+)\\b'
+    'name': 'support.class.gml'
+  }
+  {
     'match': '\\b[A-Z_]+\\b'
     'name': 'constant.language.gml'
   }
